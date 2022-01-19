@@ -26,5 +26,9 @@ function reverseString(userString) {
 }
 
 function displayData(revString) {
-
+	// print the reversed string to the page
+	document.getElementById("msg").innerHTML = `Your string revered is ${revString}.`;
+	
+	// remove the class "invisible" to allow alert functionality	
+	document.getElementById("alert").classList.remove("invisible");
 }
