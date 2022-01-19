@@ -1,4 +1,6 @@
-function getMessage() {
+
+// pull user entered string from page
+function getValues() {
 
 
 
