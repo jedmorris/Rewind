@@ -1,4 +1,3 @@
-
 // pull user entered string from page
 function getValues() {
 	let userString = document.getElementById("revString").value.length
@@ -19,7 +18,7 @@ function getValues() {
 function reverseString(userString) {
 	revString = "";
 
-	for (let i = userString.length -1; i >= 0; i--) {
+	for (let i = userString.length - 1; i >= 0; i--) {
 		revString += userString[i];
 	}
 	return revString;
@@ -28,7 +27,7 @@ function reverseString(userString) {
 function displayData(revString) {
 	// print the reversed string to the page
 	document.getElementById("msg").innerHTML = `Your string revered is ${revString}.`;
-	
+
 	// remove the class "invisible" to allow alert functionality	
-	document.getElementById("alert").classList.remove("invisible");
+	document.getElementById("alert").classList.remove("d-none");
 }
