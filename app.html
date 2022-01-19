@@ -59,13 +59,38 @@
 			</div>
 		</div>
 	</nav>
-
+	<!-- Main Section -->
 	<main class="flex-shrink-0">
-		<div class="container mt-5">
-			<h1>APP UI WILL GO HERE</h1>
-			<input id="message" name="message" placeholder="Enter A Message">
-			<div class="p-2">
-				<button id="btnSubmit" class="btn btn-primary">Display Message</button>
+		<div class="container col-xxl-8 px-4 py-5 mt-5">
+			<div class="row">
+				<div class="col">
+					<!-- Instructions -->
+					<h1>REWIND: A Coding Challenge</h1>
+					<h4 class="lead">There and back again. A javascript coding exercise using
+						arrays. Write a
+						program the displays a string in reverse.</h4>
+				</div>
+				<div class="col">
+					<!-- Main App UI -->
+					<h1>Enter a String to Reverse</h1>
+					<form action="" class="row">
+						<div class="col">
+							<input id="reString" class="form-control" type="text"
+								placeholder="Enter A String">
+						</div>
+						<div class="col-12 d-flex
+						justify-content-start justify-content-md-end">
+							<button id="btnSubmit" class="btn btn-primary">Reverse
+								Me</button>
+						</div>
+					</form>
+					<div class="alert alert-success mt-5 invisible fade show" id="alert" role="alert">
+						<h4 class="alert-heading">Well done!</h4>
+						<p id="message">
+							<!-- Content goes here -->
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
