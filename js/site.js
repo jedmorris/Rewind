@@ -17,7 +17,12 @@ function getValues() {
 }
 
 function reverseString(userString) {
+	revString = "";
 
+	for (let i = userString.length -1; i >= 0; i--) {
+		revString += userString[i];
+	}
+	return revString;
 }
 
 function displayData(revString) {
